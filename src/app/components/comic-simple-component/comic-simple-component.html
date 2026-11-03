@@ -1,0 +1,20 @@
+<h1>Comics historicos</h1>
+<button (click)="mostrarComics()">
+    Cargar Comics
+</button>
+<h3 style="color: rgb(88, 136, 178)">
+    Titulo: {{comic.titulo}}
+</h3>
+<p>Descripción: {{comic.descripcion}}</p>
+<img src="{{comic.imagen}}"
+    style="width: 300px; height: 390px;"/>
+
+
+@for(tebeo of arraycomics; track tebeo) {
+    <h3 style="color: rgb(88, 136, 178)">
+        Titulo: {{tebeo.titulo}}
+    </h3>
+    <p>Descripción: {{tebeo.descripcion}}</p>
+    <img src="{{tebeo.imagen}}"
+        style="width: 300px; height: 390px;"/>
+}
