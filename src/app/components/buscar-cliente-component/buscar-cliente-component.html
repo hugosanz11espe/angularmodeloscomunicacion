@@ -1,0 +1,16 @@
+<h1>Buscar cliente</h1>
+<input type="number" [(ngModel)]="idcliente" placeholder="ID del cliente" />
+<button (click)="mostrarCliente()">
+    Mostrar cliente
+</button>
+@for(cliente of arrayclientes; track cliente) {
+    <h3 style="color: rgb(88, 136, 178)">
+        ID: {{cliente.idcliente}}
+    </h3>
+    <h3 style="color: rgb(88, 136, 178)">
+        Nombre: {{cliente.nombre}}
+    </h3>
+    <p>Página web: {{cliente.paginaweb}}</p>
+    <img src="{{cliente.imagencliente}}"
+        style="width: 500px; height: 300px;"/>
+}

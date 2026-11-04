@@ -1,0 +1,13 @@
+<h1>RMA VS FCB</h1>
+<button (click)="mostrarJugadores()">
+    Cargar Jugadores
+</button>
+@for(jugador of arrayjugadores; track jugador) {
+    <h3 style="color: rgb(88, 136, 178)">
+        Nombre: {{jugador.jugador}}
+    </h3>
+    <img src="{{jugador.imagen}}"
+        style="width: 500px; height: 300px;"/>
+}
+
+
