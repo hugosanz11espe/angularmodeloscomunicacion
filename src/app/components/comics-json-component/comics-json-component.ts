@@ -20,7 +20,6 @@ export class ComicsJsonComponent {
     let datos = await response.json();
     for(let elem of datos){
       let comic = new Comic(elem.titulo, elem.imagen, elem.descripcion);
-      //guardamos cada comic en el array
       this.arraycomics.push(comic);
     }
     this._cdr.detectChanges();
